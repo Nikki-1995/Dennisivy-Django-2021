@@ -1,0 +1,11 @@
+{% extends 'main.html' %}
+{% block content %}
+<h1>
+    This project number is {{number}}
+</h1>
+{% for tag in tags %}
+<span style="border: 1px solid">{{tag}}</span>
+{% endfor %}
+<p>{{project.title}}--{{project.description}}</p>
+
+{% endblock content %}
